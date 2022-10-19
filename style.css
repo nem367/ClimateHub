@@ -1,0 +1,1087 @@
+@font-face {
+    font-family: climatehub;
+    src: url(fonts/Striper-Regular.otf);
+}
+
+@font-face {
+    font-family: offset;
+    src: url(fonts/kaftan.otf);
+}
+
+@font-face {
+    font-family: navv;
+    src: url(fonts/body/dr/dr-medium-TRIAL.otf);
+}
+
+@font-face {
+    font-family: textt;
+    /* src: url(fonts/body/dr/dr-regular-TRIAL.otf); */
+    src: url(fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: titles;
+    src: url(fonts/body/dr/dr-medium-TRIAL.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 900px) {
+    /* NAV */
+    nav a{
+        font-family: navv;
+        font-weight: bold;
+        font-size: 20px;
+        /* color: #b96935; */
+        color: #2a2a2a;
+        text-decoration: none;
+    }
+
+    #logo{
+        width: auto;
+        height: 8vh;
+        margin: 2vh;
+    }
+
+    nav{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+
+        /* background-color:white; */
+    }
+
+    .nav-item{
+        width: 30vw;
+        height: 10vh;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    body{
+        font-family: textt;
+        /* background-color: #ececec; */
+        background-color: #F6F5F4;
+    }
+
+    /* CLIMATE HUB */
+    #title{
+        display: flex;
+        width: 100vw;
+        height: 90vh;
+    }
+
+    h1{
+        font-family: climatehub;
+        font-size: 200px;
+        /* color: #0d915d; */
+        color: #2a2a2a;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+    }
+
+    /* h1:hover{
+        font-style: italic;
+    } */
+
+    /* MEASURE OFFSET REDUCE */
+    #footprint{
+        font-family: offset;
+        font-size: 70px;
+        /* color: #0d915d; */
+        color: #2a2a2a;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #measure{
+        width: 100vw;
+        height: 30vh;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 5vw;
+    }
+
+    #reduce{
+        width: 100vw;
+        height: 30vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #offset{
+        width: 100vw;
+        height: 30vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 5vw;
+    }
+
+    /*company overview*/
+    #companies{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        color: #2a2a2a;
+        /* align-content: center; */
+
+        width: 100vw;
+        height: 90vh;
+
+        /* margin-top: 3vh; */
+    }
+
+    .companies-item{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+        width: 23vw;
+        min-height: 55vh;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    .company-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23vw;
+        height: 5vh;
+
+        margin-bottom: 2vh;
+    }
+
+    h3{
+        font-family: titles;
+        font-weight: bold;
+        font-size: 30px;
+        color: #2a2a2a;
+    }
+
+    .company-pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 23vw;
+        min-height: 20vh;
+        padding: 0px;
+
+        /* border: 1px solid black; */
+    }
+
+    .company-pic img{
+        /* width: 23vw;
+        height: 20vh; */
+        width: 330px;
+        height: 230px;
+    }
+
+    .company-descrip{
+        margin-top: 2vh;
+        width: 23vw;
+    }
+
+    .company-descrip p{
+        font-size: 17px;
+        line-height: 3vh;
+    }
+
+    #carte{
+        display: flex;
+        flex-direction: column wrap;
+        justify-content: space-between;
+
+        margin-top: 2vh;
+        width: 23vw;
+    }
+
+    #services{
+        width: 10vw;
+        padding: 10px;
+    }
+
+    #links{
+        width: 10vw;
+        padding: 10px;
+    }
+
+    #circles-container{
+        display: flex;
+        width: 100vw;
+        height: 90vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .circle{
+        border-radius: 50%;
+        width: 25vw;
+        height: 25vw;
+        border: 3px solid #2a2a2a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /*animation*/
+        transform: rotate(0deg);
+        transition: background-color 1s ease-out, color 1s ease-out, transform 5s linear;
+    }
+
+    .circle h3{
+        font-size: 40px;
+        font-family: titles;
+        color: #2a2a2a;
+    }
+
+    .circle a{
+        text-decoration: none;
+    }
+
+    .circle:hover{
+        transform: rotate(3600deg);
+        background: #0d915d;
+    }
+
+    .cmiddle{
+        align-self: flex-start;
+    }
+
+    .cend{
+        align-self: flex-end;
+    }
+
+    /*TOOLS PAGE*/
+    .tools-category{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .tools-category h2{
+        font-size: 124px;
+        margin-bottom: 10vh;
+
+        font-family: titles;
+        color: #2a2a2a;
+    }
+
+    .databases-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 70vw;
+        height: 10vh;
+
+        margin-left: 25vw;
+        margin-right: 5vw;
+
+        font-size: 20px;
+        color: #2a2a2a;
+    }
+
+    hr{
+        margin-left: 25vw;
+        margin-right: 5vw;
+    }
+
+    .databases-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 25vw;
+        height: 4vh;
+    }
+
+    .databases-item a{
+        color: #2a2a2a;
+    }
+
+    .databases-descrip{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50vw;
+        height: 4vh;
+    }
+
+    /*doodles*/
+    #lamp{
+        width: auto; 
+        height: 30vh; 
+        position: absolute; 
+        top: 10vh; 
+        right: 0.1vw;
+    }
+
+    #planets{
+        width: auto; 
+        height: 30vh; 
+        margin-left: 2vw;
+    }
+
+    #star{
+        width: 20vw; 
+        height: auto; 
+        margin-left: 2vw; 
+        position: absolute;
+    }
+
+    #plant{
+        width: 20vw; 
+        height: auto; 
+        margin-left: 80vw; 
+        position: absolute;
+    }
+
+    #calculator{
+        width: 20vw; 
+        height: auto; 
+        margin-left: 2vw; 
+        position: absolute;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 600px) and (max-width:900px) {
+       /* NAV */
+       nav a{
+        font-family: navv;
+        font-size: 20px;
+        /* color: #b96935; */
+        color: #2a2a2a;
+        text-decoration: none;
+    }
+
+    #logo{
+        width: auto;
+        height: 8vh;
+        margin: 2vh;
+    }
+
+    nav{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+
+        /* background-color:white; */
+    }
+
+    .nav-item{
+        width: 30vw;
+        height: 10vh;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    body{
+        font-family: textt;
+        /* background-color: #ececec; */
+        background-color: #F6F5F4;
+    }
+
+    /* CLIMATE HUB */
+    #title{
+        display: flex;
+        width: 100vw;
+        height: 90vh;
+    }
+
+    h1{
+        font-family: climatehub;
+        font-size: 150px;
+        color: #0d915d;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+    }
+
+    /* h1:hover{
+        font-style: italic;
+    } */
+
+    /* MEASURE OFFSET REDUCE */
+    #footprint{
+        font-family: offset;
+        font-size: 70px;
+        color: #0d915d;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #measure{
+        width: 100vw;
+        height: 30vh;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 5vw;
+    }
+
+    #reduce{
+        width: 100vw;
+        height: 30vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #offset{
+        width: 100vw;
+        height: 30vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 5vw;
+    }
+
+    /*company overview*/
+    #companies{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        color: #2a2a2a;
+
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .companies-item{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+        width: 100vw;
+        min-height: 55vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+    }
+
+    .company-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 5vh;
+
+        margin-bottom: 2vh;
+    }
+
+    h3{
+        font-family: titles;
+        font-weight: 40px;
+        font-size: 50px;
+        color: #2a2a2a;
+    }
+
+    .company-pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+        min-height: 20vh;
+        padding: 0px;
+    }
+
+    .company-pic img{
+        width: 660px;
+        height: 460px;
+    }
+
+    .company-descrip{
+        width: 100vw;
+        text-align: center;
+    }
+
+    .company-descrip p{
+        font-size: 25px;
+        line-height: 3vh;
+
+        padding: 5vw;
+    }
+
+    #carte{
+        display: flex;
+        flex-direction: column wrap;
+        justify-content: space-between;
+        width: 100vw;
+        font-size: 20px;
+    }
+
+    #services{
+        width: 50vw;
+        padding-left: 20vw;
+    }
+
+    #links{
+        width: 50vw;
+        padding-left: 20vw;
+    }
+
+    #circles-container{
+        display: flex;
+        width: 100vw;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+
+    .circle{
+        border-radius: 50%;
+        width: 40vw;
+        height: 25vh;
+        border: 3px solid #2a2a2a;
+        display: flex;
+    }
+
+    .circle h3{
+        font-size: 40px;
+        color: #2a2a2a;
+        font-family: titles;
+    }
+
+    .circle a{
+        text-decoration: none;
+    }
+
+    .cmiddle{
+        align-self: flex-start;
+    }
+
+    .cend{
+        align-self: flex-end;
+    }
+
+    /*TOOLS PAGE*/
+    .tools-category{
+        width: 100vw;
+        min-height: 30vh;
+
+        margin-bottom: 5vh;
+    }
+
+    .tools-category h2{
+        font-size: 100px;
+        margin-bottom: 5vh;
+    }
+
+    .databases-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 70vw;
+        height: 10vh;
+
+        margin-left: 25vw;
+        margin-right: 5vw;
+
+        font-size: 20px;
+        color: #2a2a2a;
+    }
+
+    hr{
+        margin-left: 25vw;
+        margin-right: 5vw;
+    }
+
+    .databases-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 25vw;
+        height: 4vh;
+    }
+
+    .databases-item a{
+        color: #2a2a2a;
+    }
+
+    .databases-descrip{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50vw;
+        height: 4vh;
+    }
+
+    /*doodles*/
+    #lamp{
+        width: auto; 
+        height: 10vh; 
+        position: absolute; 
+        top: 10vh; 
+        right: 0.1vw;
+    }
+    
+    #planets{
+        width: auto; 
+        height: 20vh; 
+        margin-left: 2vw;
+    }
+    
+    #star{
+        width: 20vw; 
+        height: auto; 
+        margin-left: 2vw; 
+        position: absolute;
+    }
+    
+    #plant{
+        width: 30vw; 
+        height: auto; 
+        margin-left: 70vw;
+        position: relative;
+    }
+    
+    #calculator{
+        width: 20vw; 
+        height: auto; 
+        margin-left: 2vw; 
+        position: relative;
+        left: 5vw;
+    }
+}
+
+/* For mobiles */
+@media only screen and (max-width: 600px){
+    /* NAV */
+    nav a{
+        font-family: navv;
+        font-size: 17px;
+        /* color: #b96935; */
+        color: #2a2a2a;
+        text-decoration: none;
+    }
+
+    #logo{
+        width: auto;
+        height: 10vh;
+        margin: 2vh;
+    }
+
+    nav{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .nav-item{
+        width: 30vw;
+        height: 10vh;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    body{
+        font-family: textt;
+        /* background-color: #ececec; */
+        background-color: #F6F5F4;
+    }
+
+    /* CLIMATE HUB */
+    #title{
+        display: flex;
+        width: 95vw;
+        height: 90vh;
+    }
+
+    h1{
+        font-family: climatehub;
+        font-size: 80px;
+        color: #0d915d;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+    }
+
+    /* h1:hover{
+        font-style: italic;
+    } */
+
+    /* MEASURE OFFSET REDUCE */
+    #footprint{
+        font-family: offset;
+        font-size: 55px;
+        color: #0d915d;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        width: 95vw;
+        height: 100vh;
+    }
+
+    #measure{
+        width: 90vw;
+        height: 30vh;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #reduce{
+        width: 90vw;
+        height: 30vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #offset{
+        width: 90vw;
+        height: 30vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /*company overview*/
+    #companies{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        color: #2a2a2a;
+
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .companies-item{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+        width: 100vw;
+        min-height: 55vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .company-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 5vh;
+
+        margin-bottom: 2vh;
+    }
+
+    h3{
+        font-family: titles;
+        font-weight: bold;
+        font-size: 30px;
+        color: #2a2a2a;
+    }
+
+    .company-pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+        min-height: 20vh;
+        padding: 0px;
+    }
+
+    .company-pic img{
+        width: 330px;
+        height: 230px;
+    }
+
+    .company-descrip{
+        width: 100vw;
+    }
+
+    .company-descrip p{
+        font-size: 17px;
+        /* line-height: 3vh; */
+        padding: 5vw;
+    }
+
+    #carte{
+        display: flex;
+        flex-direction: column wrap;
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    #services{
+        width: 50vw;
+        padding-left: 20vw;
+    }
+
+    #links{
+        width: 50vw;
+        padding-left: 20vw;
+    }
+
+    #circles-container{
+        display: flex;
+        width: 100vw;
+        height: 90vh;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+    }
+
+    .circle{
+        border-radius: 50%;
+        width: 50vw;
+        height: 23vh;
+        border: 3px solid #2a2a2a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /*animation*/
+        /* transform: rotate(0deg);
+        transition: background-color 1s ease-out, color 1s ease-out, transform 5s linear; */
+    }
+
+    .circle h3{
+        font-size: 40px;
+        font-family: titles;
+        color: #2a2a2a;;
+    }
+
+    .circle a{
+        text-decoration: none;
+    }
+
+    /* .circle:hover{
+        transform: rotate(3600deg);
+        background: #0d915d;
+    } */
+
+    /*TOOLS PAGE*/
+    .tools-category{
+        width: 100vw;
+        min-height: 30vh;
+
+        margin-bottom: 7vh;
+    }
+
+    .tools-category h2{
+        font-size: 50px;
+        margin-bottom: 3vh;
+    }
+
+    .databases-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+        height: 10vh;
+
+        /* margin-left: 25vw;
+        margin-right: 5vw; */
+
+        font-size: 13px;
+        color: #2a2a2a;
+
+        margin-left: 2vw;
+    }
+
+    hr{
+        margin-left: 15vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .databases-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 25vw;
+        height: 4vh;
+    }
+
+    .databases-item a{
+        color: #2a2a2a;
+    }
+
+    .databases-descrip{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 75vw;
+        height: 4vh;
+    }
+
+    /*doodles*/
+    #lamp{
+        width: auto; 
+        height: 10vh; 
+        position: absolute; 
+        top: 10vh; 
+        right: 0.1vw;
+    }
+    
+    #planets{
+        width: auto; 
+        height: 20vh; 
+        margin-left: 2vw;
+    }
+    
+    #star{
+        display: none;
+    }
+    
+    #plant{
+        width: 30vw; 
+        height: auto; 
+        margin-left: 70vw;
+        position: relative;
+    }
+    
+    #calculator{
+        width: 20vw; 
+        height: auto; 
+        margin-left: 2vw; 
+        position: relative;
+        left: 40vw;
+    }
+}
+
+
+
+
+
+
+/*OLD TOOLS PAGE
+    .tools-container{
+        display: flex;
+
+        width: 100vw;
+        min-height: 90vh;
+
+        color: #2a2a2a;
+    }
+
+    .tool-category{
+        display: flex;
+        flex-flow: column nowrap;
+
+        width: 100vw;
+        min-height:90vh;
+    }
+
+    .tool-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #2a2a2a;
+
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .tool-item-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 100vw;
+        min-height: 80vh;
+    }
+
+    .tool-item{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+
+        width: 30vw;
+        height: 55vh;
+    }
+
+    .tool-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 30vw;
+        height: 10vh;
+    }
+
+    .tool-name a{
+        color: #2a2a2a;
+    }
+
+    .tool-descrip{
+        display: flex;
+        width: 30vw;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tool-descrip img{
+        max-height: 40vh;
+        max-width: 30vw;
+    }
+
+    h4{
+        font-size: 25px;
+    }
+*/
